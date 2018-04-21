@@ -4,13 +4,13 @@
 基於聯發科Linkit Smart 7688 Wifi 路由晶片，建置家居控制系統。
 
 ## Web - Demo
-###Web/Tunffli - View
+### Web/Tunffli - View
 
-靜態網頁: http://enoxs.clouds.twgogo.org/tunffli/
+靜態網頁: https://rhzenoxs.github.io/Tunffli-View/
 
 ## Linkit 7688 - Web 部分主體
 
-###Web/Tunffli - 7688
+### Web/Tunffli - 7688
 
 FTP 上傳放置於  /www  資料夾下，以Python 指令啟動 tunffli_main.py
 
@@ -28,7 +28,7 @@ https://github.com/nightheronry/AES_WEB
 
 ## Linkit 7688 - Java 部分主體
 
-###Java - Swing/tunffli/
+### Java - Swing/tunffli/
 
 MQTT 功能參照:
 
@@ -39,7 +39,7 @@ https://github.com/eclipse/paho.mqtt.java
 
 ## Linkit 7688 - Android 部分主體
 
-###Android/Tunffli/
+### Android/Tunffli/
 
 MQTT 功能參照:
 
@@ -60,4 +60,4 @@ https://github.com/niqdev/ipcam-view
 
 ## Image
 
-###Other/
+### Other/
