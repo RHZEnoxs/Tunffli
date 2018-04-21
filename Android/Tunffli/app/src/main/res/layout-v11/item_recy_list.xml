@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/record_item_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        android:src="@drawable/tunffli_music_fold"
+        android:layout_marginLeft="3dp" />
+
+    <TextView
+        android:id="@+id/record_item_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="file_name"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/tunffli_text"
+        android:layout_marginLeft="3dp" />
+</LinearLayout>

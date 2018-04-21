@@ -1,0 +1,27 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+        android:background="@color/tunffli_block"
+        >
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView8"
+        android:src="@drawable/ic_icon_turn_off"
+        android:layout_above="@+id/name"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tunffli "
+        android:textSize="14sp"
+        android:textColor="@color/tunffli_theme"
+        android:textStyle="bold"
+        android:paddingBottom="8dp"
+        android:layout_marginLeft="15dp"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>

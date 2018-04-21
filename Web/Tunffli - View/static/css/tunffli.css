@@ -1,0 +1,85 @@
+body {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #111111;
+  color: #FBED7E;   
+}
+.div-card-outside{
+    cursor: pointer;
+    border-radius: 5px;
+    border: 3px solid #EB961C;
+    margin-top: 5px; 
+}
+.div-card-inside{
+    background-color: #1D1F21;
+    border: 3px solid #FBFFFB;
+}
+.btn-circle-outside{
+    background-color: #1D1F21;
+    border: 3px solid #EB961C;
+    margin-top: 10px;
+}
+.btn-circle-inside{
+    border: 3px solid #FBFFFB;
+}
+.theme-text{
+    color: #EB961C;
+}
+.theme-title{
+     font-size: 90px;
+    color: #EB961C;
+}
+.theme-cbk-size{
+    font-size: 20px;
+}
+.theme-checkbox{
+    zoom: 1.5;
+}
+.theme-heading{
+    color: #FBFFFB;
+    background-color: #EB961C;
+    border-color: #EB961C;
+}
+.music-body{
+  min-height: 900px;
+  //padding-top: 70px;
+}
+
+@media (min-width: 768px) {
+  #music-slider{
+    width: 150px;
+    margin: 15px;
+  }
+}
+@media (min-width: 992px) {
+  #music-slider{
+    width: 250px;
+    margin: 15px;
+  }
+}
+@media (min-width: 1200px) {
+  #music-slider{
+    width: 250px;
+    margin: 15px;
+  }
+}
+
+
+#music-slider .ui-slider-range { background: #EB961C }
+#music-slider .ui-slider-handle { 
+    background: #FBFFFB;
+    border: 3px solid #EB961C; }
+
+.lock input[type="nsi-username"] {
+  cursor: text;
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.lock input[type="nsi-ipadress"] {
+  cursor: text;
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+

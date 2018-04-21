@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>7688 - turn off the lights</title>
+    <!--	jQuery     -->
+    <script src="static/js/external/jquery/jquery.js"></script>
+    <script src="static/js/jquery-ui.js"></script>
+    <!-- Bootstrap core CSS -->
+    <link href="static/css/bootstrap.css" rel="stylesheet">
+	<!-- Bootstrap theme -->
+    <link href="static/css/bootstrap-theme.css" rel="stylesheet">
+	<!-- Bootstrap JS -->
+ 	<script src="static/js/bootstrap.min.js"></script>
+    <!-- Static -->
+    <link rel="icon" href="static/img/favicon_turn_off.ico">
+    <link href="static/css/signin.css" rel="stylesheet">
+    <link href="static/css/tunffli.css" rel="stylesheet">
+    <script src="static/js/system.js"></script>
+    <script src="static/js/tunffli.js"></script>
+    <script src="static/js/signin.js"></script>
+</head>
+<body>
+    <canvas id='canv' class='div-signin'></canvas>
+
+<!--      Index-View   -->    
+    <div id="signin-view" class="container">
+     <div class="title-signin">
+         <h1>Tunffli</h1>
+         <h3>7688 - turn off the light</h3>
+     </div>
+      <div class="form-signin" >
+        <label for="username" class="sr-only">Username</label>
+        <input type="username" class="form-control" value="root(default)" required autofocus readonly>
+        <label for="inputPassword" class="sr-only">Password</label>
+        <input type="password" id="Signin_Password" class="form-control" placeholder="Password" required>
+        <button id="btn-login" class="btn btn-lg btn-warning btn-block" type="button">Sign in</button>
+      </div>
+    </div>
+<!--      Index-View   div-index-->
+     <div id="index-view" class="container ">
+         <div class="row" align="center">
+         <div id="Card-NetSysInfo" class="col-md-3 col-sm-4 col-xs-6">
+           <div class="div-card-outside">
+            <img src="static/img/ic_settings_white_36px.svg" alt="setting" class="img-circle btn-circle-outside" height="105" width="105">
+            <h3>NetWork<br>System<br>Information</h3>
+            </div> 
+         </div>
+         <div id="btn-sw-rly" class="col-md-3 col-sm-4 col-xs-6">
+           <div class="div-card-outside">
+            <img src="static/img/ic_power_settings_new_white_36px.svg" alt="setting" class="img-circle btn-circle-outside" height="105" width="105">
+             <h3>Switch<br>&#9679;<br>Relay</h3>
+             </div>
+         </div>
+         <div id="btn-msc-play" class="col-md-3 col-sm-4 col-xs-6">
+           <div class="div-card-outside">
+            <img src="static/img/ic_music_note_white_36px.svg" alt="setting" class="img-circle btn-circle-outside" height="105" width="105">
+             <h3>Music<br>&#9679;<br>Madplay</h3>
+             </div>
+         </div>
+         <div id="btn-wcm-mjpg" class="col-md-3 col-sm-4 col-xs-6">
+           <div class="div-card-outside">
+            <img src="static/img/ic_camera_white_36px.svg" alt="setting" class="img-circle btn-circle-outside" height="105" width="105">
+             <h3>WebCam<br>&#9679;<br>Streamer</h3>
+           </div>
+         </div>
+         <div id="btn-rsa-mqtt" class="col-md-3 col-sm-4 col-xs-6">
+           <div class="div-card-outside">
+            <img src="static/img/ic_security_white_36px.svg" alt="setting" class="img-circle btn-circle-outside" height="105" width="105">
+             <h3>&nbsp;<br>Safty<br>&nbsp;</h3>
+           </div>
+         </div>
+         <div id="btn-light" class="col-md-3 col-sm-4 col-xs-6">
+           <div class="div-card-outside">
+            <img src="static/img/ic_wb_incandescent_white_36px.svg" alt="setting" class="img-circle btn-circle-outside" height="105" width="105">
+             <h3>&nbsp;<br><span id="light-sta">ON</span><br>&nbsp;</h3>
+           </div>
+         </div>
+         <div id="btn-about" class="col-md-3 col-sm-4 col-xs-6">
+           <div class="div-card-outside">
+            <img src="static/img/ic_priority_high_white_36px.svg" alt="setting" class="img-circle btn-circle-outside" height="105" width="105">
+             <h3>&nbsp;<br>About<br>&nbsp;</h3>
+           </div>
+         </div>
+          <div id="btn-logout" class="col-md-3 col-sm-4 col-xs-6">
+           <div class="div-card-outside">
+            <img src="static/img/ic_cancel_white_36px.svg" alt="setting" class="img-circle btn-circle-outside" height="105" width="105">
+             <h3>&nbsp;<br>Sign out<br>&nbsp;</h3>
+           </div>
+         </div>
+        </div> 
+     </div>
+<!--     Network System Information   -->
+<div id="NetSysInfo-view" class="container " >
+    <div class="row">
+       <div class="col-md-1 col-sm-1 col-xs-1">
+                <button id="btn-back-nsi" class="btn btn-primary" type="button">&laquo; BACK</button>
+        </div>
+        <div class = "col-md-6 col-md-offset-2 col-sm-10" >
+           <div class="col-md-1 col-sm-1"><img src="static/img/ic_settings_white_36px.svg" alt="setting" class="img-circle btn-circle-outside" height="50" width="50"></div>
+             <div class="col-md-10 col-sm-10"><h2 class="theme-text">&nbsp;&nbsp;Network System Information</h2></div>
+        </div>
+        
+    </div>
+    <br>
+    <div role="tabpanel">
+    <!-- Nav tabs -->
+        <ul class="nav  nav-tabs nav-justified" role="tablist">
+            <li role="presentation" class="active"><a href="#system-view" aria-controls="home" role="tab" data-toggle="tab">System Information</a></li>
+            <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Network</a></li>
+        </ul>
+      <!-- Tab panes -->
+    <div class="tab-content">
+        <div role="tabpanel" class="tab-pane active" id="system-view">
+            <div class="row" >
+                 <div class="col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-3 col-xs-8 col-xs-offset-2">
+                    <h2 class="theme-text">Platform information</h2>
+                        <div class="form-group">
+                            <h4>Device name</h4>
+                            <input type="Hostname" class="form-control" id="Hostname" placeholder="Hostname">
+                        </div>
+                    <div class="form-group lock">
+                        <h4>Current IP address</h4>
+                        <input type="nsi-username" class="form-control" id="equip_ip" readonly>
+                    </div>
+                    <button id="btn-config-hostname" class="btn btn-warning btn-block" type="button">CONFIGURE</button>
+                 </div>
+             </div>
+             <div class="row" >
+                 <div class="col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-3 col-xs-8 col-xs-offset-2">
+                    <h2 class="theme-text">Account information</h2>
+                    <div class="form-group lock">
+                        <h4>Account</h4>
+                        <input type="nsi-username" class="form-control" id="exampleInputEmail1" value="root(default)" readonly>
+                    </div>
+                    <div class="form-group">
+                        <h4>Password</h4>
+                        <input type="password" class="form-control" id="Signin_NewPasswd" placeholder="Password">
+                    </div>
+                    <button id="btn-config-password" class="btn btn-warning btn-block" type="button">CONFIGURE</button>
+                 </div>
+             </div>
+        </div>
+        <div role="tabpanel" class="tab-pane" id="profile" >
+        <div class="row">
+           <div class="col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-3 col-xs-8 col-xs-offset-2">
+              <h2 class="theme-text">Network setting</h2>
+               <div class="btn-group btn-group-justified" data-toggle="buttons">
+                  <label id="lable_ap" class="btn btn-warning">
+                    <input type="radio" name="wifi_mode" autocomplete="off" value="ap"> AP Mode
+                  </label>
+                  <label id="lable_sta" class="btn btn-warning">
+                    <input type="radio" name="wifi_mode" autocomplete="off" value="sta"> Station Mode
+                  </label>
+                </div>
+          </div>  
+        </div>
+           <div id="ap_mode_view" class="col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-3 col-xs-8 col-xs-offset-2">
+                <div class="form-group">
+                    <h4>Network name</h4>
+                        <input type="text" class="form-control" id="ap_ssid" placeholder="Linkit Smart 7688">
+                </div>
+                <div class="form-group">
+                    <h4>Password</h4>
+                        <input type="Password" class="form-control" id="ap_key" placeholder="Password">
+                </div>
+            </div>
+            <div id="sta_mode_view" class="col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-3 col-xs-8 col-xs-offset-2">
+                <div class="form-group">
+                    <h4>Detected Wi-Fi network</h4>
+                    <select id="Scan_NetWork" class="form-control">
+                    </select>
+                    <br>
+                    <button id="btn-scan-wifi" type="button" class="btn btn-default"><span class="glyphicon glyphicon-refresh" aria-hidden="true"></span>REFRESH</button>
+                </div>
+                <div class="form-group">
+                    <h4>Password</h4>
+                        <input type="Password" class="form-control" id="sta_key" placeholder="Password">
+                </div>
+            </div>
+            <div class="col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-3 col-xs-8 col-xs-offset-2">
+                <button id="btn-config-network" class="btn btn-warning btn-block" type="button">CONFIGURE&#9679;RESTART</button>
+            </div>
+        </div>
+    </div>
+    </div>
+</div>
+
+
+</body>
+</html>

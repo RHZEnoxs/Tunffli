@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tunffli - Webcam &amp;Streamer</title>
+    <!--	jQuery     -->
+    <script src="../static/js/external/jquery/jquery.js"></script>
+    <script src="../static/js/jquery-ui.js"></script>
+    <!-- Bootstrap core CSS -->
+    <link href="../static/css/bootstrap.css" rel="stylesheet">
+	<!-- Bootstrap theme -->
+    <link href="../static/css/bootstrap-theme.css" rel="stylesheet">
+	<!-- Bootstrap JS -->
+ 	<script src="../static/js/bootstrap.min.js"></script>
+    <!-- Static -->
+    <link rel="icon" href="../static/img/favicon_turn_off.ico">
+    <link href="../static/css/tunffli.css" rel="stylesheet">
+ 	<script src="../static/js/webcam_streamer.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+        <div class="col-md-1 col-sm-1 col-xs-1 ">
+                <button id="btn-back-nsi" class="btn btn-danger" type="button" onclick="window.close();"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></button>
+        </div></div>
+        <div class="container">
+        <div class="row featurette">
+        <div class="col-md-5 col-sm-6 col-xs-12">
+         <img id="webcam-view" src="../static/img/flask_camer.png" alt="setting" class="featurette-image img-responsive" width="500" height="500">
+         <div class="col-md-6 col-sm-6 col-xs-6"><button id="btn_view" class="btn btn-success btn-block">View</button></div>
+         <div class="col-md-6 col-sm-6 col-xs-6"><button id="btn_webcam" class="btn btn-primary btn-block">Start</button></div>
+        </div>
+        <div class="col-md-7 col-sm-6 col-xs-12">
+          <h1 class="theme-text">WebCam &amp; Streamer</h1>
+          <p class="lead">使用<strong>mjpg_streamer</strong>指令，啟動網路攝影機，透過影像串流功能，各裝置介面可瀏覽即時影像畫面。</p>
+          <h4><strong>參數說明：</strong></h4>
+          <ul>
+              <li>-i inputxxxx.so 執行輸入的 plugins </li>
+              <li>-f => fps，每秒跑多少張圖，在FLASH下設影格速率，建議設定 20 較穩定 </li>
+              <li>-d /dev/video0 是 USB Webcam 的裝置檔，將 USB Webcam 連接 Arduino Yun 後自動產生 </li>
+              <li>-o outputxxxx.so 則是執行輸出的 plugins </li>
+              <li>-r => 解析度，QSIF QCIF CGA QVGA CIF VGA SVGA XGA SXGA，或者你也可以手動輸入，例如：1024*768</li>
+          </ul>
+          <h4><strong>範例：</strong></h4>
+          <p class="lead">mjpg_streamer -i "input_uvc.so -f 20 -r SXGA -d /dev/video0" -o "output_http.so" </p>
+        </div>
+        </div>
+        </div>
+        <hr class="featurette-divider">
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3">
+           <h2 class="theme-text">Authentication</h2>
+                <div class="theme-cbk-size">
+                  <div class="checkbox">
+                    <label >
+                      <input type="checkbox" id="checkboxWarning" value="option1" class="theme-checkbox">
+                          Use credentials
+                    </label>
+                  </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 col-xs-12">
+              <div class="form-group">
+                <label for="exampleInputEmail1">Username</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Username">
+              </div>
+            <div class="form-group">
+                <label for="exampleInputPassword1">Password</label>
+                <input type="密碼" class="form-control" id="exampleInputPassword1" placeholder="Password">
+              </div>
+            </div>
+        </div>
+    </div>
+  
+    
+    
+</body>
+</html>

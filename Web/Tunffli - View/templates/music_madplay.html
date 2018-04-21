@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tunffli - Music &amp; Madplay</title>
+    <!--	jQuery     -->
+    <link rel="stylesheet" href="//apps.bdimg.com/libs/jqueryui/1.10.4/css/jquery-ui.min.css">
+    <script src="../static/js/external/jquery/jquery.js"></script>
+    <script src="../static/js/jquery-ui.js"></script>
+    <!-- Bootstrap core CSS -->
+    <link href="../static/css/bootstrap.css" rel="stylesheet">
+	<!-- Bootstrap theme -->
+    <link href="../static/css/bootstrap-theme.css" rel="stylesheet">
+	<!-- Bootstrap JS -->
+ 	<script src="../static/js/bootstrap.min.js"></script>
+    <!-- Static -->
+    <link rel="icon" href="../static/img/favicon_turn_off.ico">
+    <link href="../static/css/tunffli.css" rel="stylesheet">
+    <script src="../static/js/music_madplay.js"></script>
+</head>
+<body class="music-body">
+     <div class="container">
+     <div class="row">
+       <div class="col-md-1 col-sm-1 col-xs-1 ">
+                <button id="btn-back-nsi" class="btn btn-danger" type="button" onclick="window.close();"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></button>
+        </div>
+        <div class = "col-md-6 col-md-offset-2 col-sm-10" >
+           <div class="col-md-1 col-sm-1"><img src="../static/img/flask_music.png" alt="setting" class="img-circle btn-circle-outside" height="50" width="50"></div>
+             <div class="col-md-10 col-sm-10"><h2 class="theme-text" align="center">&nbsp;&nbsp;Music &amp; Madplay</h2></div>
+        </div>
+    </div>
+    <hr>
+    <div class="row">
+       <div class="col-md-3 col-sm-6 col-xs-6">
+            <div class="panel ">
+            <div class="panel-heading theme-heading">
+              <h3 class="panel-title">Playlist</h3>
+            </div>
+            <div class="panel-body">
+             <div id="panel-playlist" class="list-group"></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-6 col-xs-6">
+            <div class="panel ">
+                <div class="panel-heading theme-heading">
+                <h3 class="panel-title">Music</h3>
+                </div>
+            <div class="panel-body theme-body">
+            <div id="panel-musiclist" class="list-group theme-background"></div>
+            </div>
+            </div>
+        </div>
+        
+        
+         <div class="col-md-3 col-sm-6 col-xs-6">
+          <div class="panel">
+            <div class="panel-heading theme-heading" >
+              <h3 class="panel-title">File path</h3>
+            </div>
+            <div class="panel-body">
+              <div id="panel-filepath" class="list-group"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-inverse navbar-fixed-bottom" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Music&#8226;Madplay</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#"><i class="glyphicon glyphicon-play"></i></a></li>
+            <li><a href="#about"><i class="glyphicon glyphicon-stop"></i></a></li>
+            <li><a href="#about"><i class="glyphicon glyphicon-step-backward"></i></a></li>
+            <li><a href="#about"><i class="glyphicon glyphicon-step-forward"></i></a></li>
+            <li><div id="music-slider" class="col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1" ></div></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Playlist<span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+               
+                <li><a href="#">New PlayList</a></li>
+                <li><a href="#">Add Music</a></li>
+                <li><a href="#">Delete Item</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Refresh</a></li>
+                <li><a href="#">Rename</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+    
+    <script>
+    
+  $(function() {
+    $( "#music-slider" ).slider({
+      orientation: "horizontal",
+      range: "min",
+      max: 255,
+      value: 127
+//      slide: refreshSwatch,
+//      change: refreshSwatch
+    });
+    
+    $( "#music-slider" ).slider( "value", 0 );
+  });
+    </script>
+</body>
+</html>

@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="D:\Desktop_Workspace\Android_WorkSpace\Tunffli\app\build\intermediates\exploded-aar\com.android.support\support-fragment\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="b9a1ac78ad7ef3abedc4a4b30cd92bcacb939d1f">
+        <dex dex="D:\Desktop_Workspace\Android_WorkSpace\Tunffli\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-fragment-24.2.1_2dd43cfe39b19a7fa11ba96291e7ca4e5ef00825\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Desktop_Workspace\Android_WorkSpace\Tunffli\app\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="0ecb4b595fa0f0f8018a149ace3ea6525624f94e">
+        <dex dex="D:\Desktop_Workspace\Android_WorkSpace\Tunffli\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-compat-24.2.1_1efdb63011f88f4510cb2acf1428a79dcab7bcc5\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Desktop_Workspace\Android_WorkSpace\Tunffli\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="935a969265b2a166b2d20415423f5f6e90fe16e0">
+        <dex dex="D:\Desktop_Workspace\Android_WorkSpace\Tunffli\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_8c358074150cf9553dcd17846ab75f136a57f021\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Desktop_Workspace\Android_WorkSpace\Tunffli\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="09b462bbcb77650284bd6614f1a32f360ef369f8">
+        <dex dex="D:\Desktop_Workspace\Android_WorkSpace\Tunffli\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-media-compat-24.2.1_b3c6ff59c5bdd34f09c463e5fd23cad76aac0439\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Desktop_Workspace\Android_WorkSpace\Tunffli\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="ae70303b6c969967c8bc7e312b1abd2ebb695b00">
+        <dex dex="D:\Desktop_Workspace\Android_WorkSpace\Tunffli\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_b831266b738c2074d2fbf86966cbcd08f5593016\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Desktop_Workspace\Android_WorkSpace\Tunffli\app\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="7e4389bd133359a2ff88623ff1e4ff93d6e6f780">
+        <dex dex="D:\Desktop_Workspace\Android_WorkSpace\Tunffli\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_8bdf69685337ddcdb5140781be50e9daf4a48684\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Desktop_Workspace\Android_WorkSpace\Tunffli\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="43b2dba6b5a0b14527961b75329d0b90025f15ea">
+        <dex dex="D:\Desktop_Workspace\Android_WorkSpace\Tunffli\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-24.2.1_5a9a5cd38f878e6d8760bba70f9983862679cc49\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Desktop_Workspace\Android_WorkSpace\Tunffli\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="d5c731fc64c03dfe04d51134955b483551c35849">
+        <dex dex="D:\Desktop_Workspace\Android_WorkSpace\Tunffli\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-vector-drawable-24.2.1_cb23d526b2b863c56c49dceafc5611f920eb4e7f\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Desktop_Workspace\Android_WorkSpace\Tunffli\app\build\intermediates\exploded-aar\com.android.support\cardview-v7\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="c5e6490573cd2cc8018417f60ddd251138b6ed61">
+        <dex dex="D:\Desktop_Workspace\Android_WorkSpace\Tunffli\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-cardview-v7-24.2.1_10f7a38fecbfeb63824e19ca020b8989ca7e061d\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Desktop_Workspace\Android_WorkSpace\Tunffli\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="22.0.1"
+        sha1="84283f9c44a3074b0dc86af5098f18cd87f05ed5">
+        <dex dex="D:\Desktop_Workspace\Android_WorkSpace\Tunffli\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_6f27134328c471ddbe8c82225e5ea0b4cd133a80\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Desktop_Workspace\Android_WorkSpace\Tunffli\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="14e710b46b5e3125fea2018adc4263ae83a7d673">
+        <dex dex="D:\Desktop_Workspace\Android_WorkSpace\Tunffli\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_6f27134328c471ddbe8c82225e5ea0b4cd133a80\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Desktop_Workspace\Android_WorkSpace\Tunffli\app\build\intermediates\exploded-aar\com.android.support\support-v4\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="D:\Desktop_Workspace\Android_WorkSpace\Tunffli\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-24.2.1_8755003360597c9e356cb03dc8d879e2e42686f5\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Desktop_Workspace\Android_WorkSpace\Tunffli\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="22.0.1"
+        sha1="7f1d2508e06aea7288e6d53920651054c6d4def7">
+        <dex dex="D:\Desktop_Workspace\Android_WorkSpace\Tunffli\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_b831266b738c2074d2fbf86966cbcd08f5593016\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Desktop_Workspace\Android_WorkSpace\Tunffli\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="9c4c3bc902450c39ed54de170db4fb12aea20a35">
+        <dex dex="D:\Desktop_Workspace\Android_WorkSpace\Tunffli\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-utils-24.2.1_5770e3e262af7b230b660b733dc169ccdba114fc\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Desktop_Workspace\Android_WorkSpace\Tunffli\app\build\intermediates\exploded-aar\com.android.support\design\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="e03f47f3d1017a093bb3239d4ec47c3447f40744">
+        <dex dex="D:\Desktop_Workspace\Android_WorkSpace\Tunffli\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-design-24.2.1_b293760c9c966a2c682c1f9eb55c9b6b7f352fa7\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Desktop_Workspace\Android_WorkSpace\Tunffli\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="e7f3132168957eefc46229fc32c3bd464642b71e">
+        <dex dex="D:\Desktop_Workspace\Android_WorkSpace\Tunffli\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-ui-24.2.1_d3e8195e63b07ab14319bc1c9a693af015fd5b83\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Desktop_Workspace\Android_WorkSpace\Tunffli\app\build\intermediates\exploded-aar\com.android.support\support-fragment\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="5f64d657e838e8375135c0f6057a7ff8fab6a50e">
+        <dex dex="D:\Desktop_Workspace\Android_WorkSpace\Tunffli\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_b7078fe7850a5ac11a6be9ad1ee4a5a3a6d86c39\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Desktop_Workspace\Android_WorkSpace\Tunffli\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="7521486d9bfd2cd9e756e0cf75ed7d97f2ce2d3b">
+        <dex dex="D:\Desktop_Workspace\Android_WorkSpace\Tunffli\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-recyclerview-v7-24.2.1_6da65d8c6c938f3541c84c64a07997c5bddbf25e\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Desktop_Programmer\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\24.2.1\support-annotations-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="8de3aafecbdf98a61db6427f008f2d515bcd2544">
+        <dex dex="D:\Desktop_Workspace\Android_WorkSpace\Tunffli\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-24.2.1_3940cde7ebd4b3aea951b93ba8fc9a8244700cab\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Desktop_Workspace\Android_WorkSpace\Tunffli\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="fbf8da429efd5ad21e02e3e5ecaa1efc4167878d">
+        <dex dex="D:\Desktop_Workspace\Android_WorkSpace\Tunffli\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_1e56d5a73a1fffb84ac5d2cd2a4af7a375b4c94a\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Desktop_Workspace\Android_WorkSpace\Tunffli\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="867dad63c33388ff8c7644b236579355036d075f">
+        <dex dex="D:\Desktop_Workspace\Android_WorkSpace\Tunffli\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_45b33fd4a9260a39f757761d7e53b5ad5527e8a1\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Desktop_Workspace\Android_WorkSpace\Tunffli\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="94bc1dfb84dcc8b6f6f8f7cc726d7b2dd39c1574">
+        <dex dex="D:\Desktop_Workspace\Android_WorkSpace\Tunffli\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-animated-vector-drawable-24.2.1_74a67bc447f40daf70be038a1d47837f2b7eb214\classes.dex" />
+    </item>
+
+</items>

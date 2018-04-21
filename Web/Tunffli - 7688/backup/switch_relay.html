@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tunffli - Switch&amp;Relay</title>
+    <!--    Python Flask  
+    {{url_for('static', filename='socket.io.js')}}
+      -->
+    <!--	jQuery     -->
+    <script src="{{url_for('static', filename='js/external/jquery/jquery.js')}}"></script>
+<!--    <script src="../static/js/jquery-ui.js"></script>-->
+    <!-- Bootstrap core CSS -->
+    <link href="{{url_for('static', filename='css/bootstrap.css')}}" rel="stylesheet">
+	<!-- Bootstrap theme -->
+    <link href="{{url_for('static', filename='css/bootstrap-theme.css')}}" rel="stylesheet">
+	<!-- Bootstrap JS -->
+ 	<script src="{{url_for('static', filename='js/bootstrap.min.js')}}"></script>
+    <!-- Static -->
+    <link rel="icon" href="{{url_for('static', filename='img/favicon_turn_off.ico')}}">
+    <link href="{{url_for('static', filename='css/tunffli.css')}}" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+       <div class="col-md-1 col-sm-1 col-xs-1 ">
+                <button id="btn-back-nsi" class="btn btn-danger" type="button" onclick="window.close();"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></button>
+        </div></div>
+        <div class="row">
+        <div class="col-md-12 col-sm-12">
+           <div class="jumbotron">
+          
+            <h1 class="theme-text">Switch &amp; Relay</h1>
+            <p>使用 DC 3V 繼電器、矽整流二極體(1N4007)、PNP 電晶體(S9012)等電子元件建置電源控制開關。<br>(10A DC24V,AC240V)</p>
+            <br>
+<!--
+            <p>
+            <a class="btn btn-lg btn-primary " href="javascript:window.close();"role="button">&laquo; COLSE </a>
+            </p>
+-->
+           </div> 
+        </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+              <h2 class="theme-text">Device information</h2>
+              <div class="table-responsive">
+                  <table class="table">
+                       <thead>
+              <tr>
+                <th>#</th>
+                <th>Device Name</th>
+                <th>Device Id</th>
+                <th>Test</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>大門</td>
+                <td>0x01</td>
+                <td><button type="button" class="btn btn-warning btn-sm"><span class="glyphicon glyphicon-flash" aria-hidden="true"></span></button></td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>主燈</td>
+                <td>0x02</td>
+                <td><button type="button" class="btn btn-warning btn-sm"><span class="glyphicon glyphicon-flash" aria-hidden="true"></span></button></td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>攝影機</td>
+                <td>0x03</td>
+                <td><button type="button" class="btn btn-warning btn-sm"><span class="glyphicon glyphicon-flash" aria-hidden="true"></span></button></td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>喇叭</td>
+                <td>0x03</td>
+                <td><button type="button" class="btn btn-warning btn-sm"><span class="glyphicon glyphicon-flash" aria-hidden="true"></span></button></td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td>陽台</td>
+                <td>0x03</td>
+                <td><button type="button" class="btn btn-warning btn-sm"><span class="glyphicon glyphicon-flash" aria-hidden="true"></span></button></td>
+              </tr>
+            </tbody>
+                  </table>
+              </div>
+              <p><a class="btn btn-lg btn-warning" href="#" role="button" data-toggle="modal" data-target="#Dialog_Setting"><span class="glyphicon glyphicon-cog" aria-hidden="true">
+              </span>Setting</a></p>
+            </div>
+            <div class="col-md-3">
+              <h2 class="theme-text">Layout</h2>
+              <p><img src="../static/img/sw-r-Layout.jpg" alt="setting" class="img-rounded img-responsive" ></p>
+              <p><a class="btn btn-lg btn-warning" href="../static/img/sw-r-Layout.jpg" role="button">View &raquo;</a></p>
+            </div>
+            <div class="col-md-3">
+              <h2 class="theme-text">Relay</h2>
+              <p><img src="{{url_for('static', filename='img/sw-r-relay.jpg')}}" alt="setting" class="img-rounded img-responsive" ></p>
+              <p><a class="btn btn-lg btn-warning" href="../static/img/sw-r-relay.jpg" role="button">View &raquo;</a></p>
+            </div>
+            <div class="col-md-3">
+              <h2 class="theme-text">1N4007</h2>
+              <p><img src="{{url_for('static', filename='img/sw-r-1n4007.jpg')}}" alt="setting" class="img-rounded img-responsive" ></p>
+              <p><a class="btn btn-lg btn-warning" href="../static/img/sw-r-1n4007.jpg" role="button">View &raquo;</a></p>
+            </div>
+            <div class="col-md-3">
+              <h2 class="theme-text">S9012</h2>
+              <p><img src="{{url_for('static', filename='img/sw-r-9012.png')}}" alt="setting" class="img-rounded img-responsive" ></p>
+              <p><a class="btn btn-lg btn-warning" href="../static/img/sw-r-9012.png" role="button">View &raquo;</a></p>
+            </div>
+        </div>
+    </div>
+    <!--	Dialog Type -->
+<div class="modal fade" id="Dialog_Setting" tabindex="-1" role="dialog" aria-labelledby="CategoryLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button id="dialog_btn_Close" type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title" id="CategoryLabel"></h4>
+      </div>
+      <div class="modal-body">
+       	<div class="input-group input-group">
+       		<span class="input-group-addon">0x01</span>
+  			<input id="dialog_input" type="text" class="form-control" >
+		</div>
+        <div class="input-group input-group">
+       		<span class="input-group-addon">0x02</span>
+  			<input id="dialog_input" type="text" class="form-control" >
+		</div>
+        <div class="input-group input-group">
+       		<span class="input-group-addon">0x03</span>
+            <input id="dialog_input" type="text" class="form-control" >
+		</div>
+        <div class="input-group input-group">
+       		<span class="input-group-addon">0x04</span>
+            <input id="dialog_input" type="text" class="form-control" >
+		</div>
+        <div class="input-group input-group">
+       		<span class="input-group-addon">0x05</span>
+            <input id="dialog_input" type="text" class="form-control" >
+		</div>
+      </div>
+      <div class="modal-footer">
+        <button id="dia_cate_btnNo" type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+        <button id="dia_cate_btnOK" type="button" class="btn btn-primary">確定</button>
+      </div>
+    </div>
+  </div>
+</div>
+   
+    
+</body>
+</html>

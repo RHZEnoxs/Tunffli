@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="tunffli_black">#111111</color>
+    <color name="tunffli_block">#1D1F21</color>
+    <color name="tunffli_white">#FBFFFB</color>
+    <color name="tunffli_theme">#EB961C</color>
+    <color name="tunffli_text">#FBED7E</color>
+
+</resources>

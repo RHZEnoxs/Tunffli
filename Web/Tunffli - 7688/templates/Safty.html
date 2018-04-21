@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Safty</title>
+    <!--	jQuery     -->
+    <script src="../static/js/external/jquery/jquery.js"></script>
+    <script src="../static/js/jquery-ui.js"></script>
+    <!-- Bootstrap core CSS -->
+    <link href="../static/css/bootstrap.css" rel="stylesheet">
+	<!-- Bootstrap theme -->
+    <link href="../static/css/bootstrap-theme.css" rel="stylesheet">
+	<!-- Bootstrap JS -->
+ 	<script src="../static/js/bootstrap.min.js"></script>
+    <!-- Static -->
+    <link rel="icon" href="../static/img/favicon_turn_off.ico">
+    <link href="../static/css/cover.css" rel="stylesheet">
+    <script src="../static/js/Safty.js"></script>
+</head>
+<body>
+    <div class="site-wrapper">
+      <div class="site-wrapper-inner">
+        <div class="cover-container">
+           <div class="inner cover">
+            <h1 class="cover-heading theme-title">RSA</h1>
+            <p class="lead"><input type="text" class="form-control" placeholder="Generating an rsa key ..."></p>
+              <button id="btn-generating" class="btn btn-lg btn-warning scroll" value="Encrypt">Generating</button>
+           </div>
+        </div>
+      </div>
+    </div>
+    <br><br><br><br>
+    <div id="rsa-view" class="container rsa-view">
+        <div class="row">
+           <div class="col-md-1 col-sm-1 col-xs-1 ">
+                <button id="btn-back-nsi" class="btn btn-danger" type="button" onclick="window.close();"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></button>
+            </div>
+        </div>
+    <div class="row">
+        <div class="col-md-12 col-sm-10 col-sm-offset-1">
+        <div class="jumbotron">
+          
+            <h1 class="theme-text">RSA</h1>
+            <p>RSA加密演算法是一種非對稱加密演算法,利用兩個質數作為加密與解密的兩個鑰匙(key)。這兩個鑰匙分別稱為公開鑰匙 (public key) 和私人鑰匙 (private key 或是 secret key)，鑰匙的長度約在 40 個位元到 1024 位元。公開鑰匙作為加密，只有使用私人鑰匙才能解密，解密者只要不洩露私人鑰匙，別人就算有公開鑰匙，也是很難推演算出來私人鑰匙，就算是利用反向工程來解密也不是一件簡單的事，所以 RSA 算是一種十分安全的加密與解密演算法。</p>
+        <div class="row">
+            <div class="col-md-2 col-sm-3 col-xs-6 col-md-offset-10 col-sm-offset-9 col-xs-offset-6">
+                <button id="btn-back-nsi" class="btn btn-danger btn-circle btn" type="button" data-toggle="modal" data-target="#Dialog_Check"><i class="glyphicon glyphicon-trash" aria-hidden="true"></i></button>
+                <button id="btn-back-nsi" class="btn btn-primary btn-circle btn" type="button" data-toggle="modal" data-target="#Dialog_RSA"><i class="glyphicon glyphicon-lock" aria-hidden="true"></i></button>
+            </div>
+            <div class="col-md-1 col-sm-1 col-xs-1  col-sm-offset-1 col-xs-offset-1">
+            </div>
+        </div>
+        </div> 
+        </div>
+    </div>
+    <div class="row">
+    <div class="col-md-12 col-sm-10 col-sm-offset-1">
+            <H1 class="theme-text">Register</H1>
+            <div class="panel ">
+            <div class="panel-heading theme-heading">
+              <h3 class="panel-title"> PC &amp; Mobile</h3>
+            </div>
+            <div class="panel-body cover-table">
+                 <div class="table-responsive">
+                  <table class="table cover-table">
+                       <thead>
+              <tr>
+                <th>#</th>
+                <th>Device Name</th>
+                <th>Device Id</th>
+                <th>Test</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>iPhone 7</td>
+                <td>MD527695</td>
+                <td><button type="button" class="btn btn-warning btn-sm" data-toggle="modal" data-target="#Dialog_Register"><span class="glyphicon glyphicon-cog" aria-hidden="true"></span></button></td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Enoxs-PC</td>
+                <td>00330-80000-000121-AA706</td>
+                <td><button type="button" class="btn btn-warning btn-sm" data-toggle="modal" data-target="#Dialog_Register"><span class="glyphicon glyphicon-cog" aria-hidden="true"></span></button></td>
+              </tr>
+              <tr>
+                <td colspan="3"></td>
+                <td><button type="button" class="btn btn-warning btn-sm"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></button></td>
+              </tr>
+            </tbody>
+                  </table>
+              </div>
+            </div>
+          </div>
+    </div>
+    </div>
+    <hr class="featurette-divider">
+    <div class="row">
+        <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 col-xs-12">
+             <h2 class="theme-text">MQTT</h2>
+              <div class="form-group">
+                <label for="exampleInputEmail1">Username</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Username">
+              </div>
+            <div class="form-group">
+                <label for="exampleInputPassword1">Password</label>
+                <input type="密碼" class="form-control" id="exampleInputPassword1" placeholder="Password">
+              </div>
+        <button class="btn btn-warning btn-block">SAVA &amp; APPLY</button>
+              
+        </div>
+        
+    </div>
+    <br><br><br>
+    <!-- Double Check Dialg-->
+<div class="modal fade" id="Dialog_Check" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h1 class="modal-title theme-black" id="CheckLabel">確定刪除 ？ </h1>
+      </div>
+      <div class="modal-footer">
+        <button id="dia_chk_btnNo" type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+        <button id="dia_chk_btnOK" type="button" class="btn btn-primary">確定</button>
+      </div>
+    </div>
+  </div>
+</div>
+     <!--	Dialog Type -->
+<div class="modal fade" id="Dialog_RSA" tabindex="-1" role="dialog" aria-labelledby="CategoryLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button id="dialog_btn_Close" type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h3 class="modal-title theme-black" id="CategoryLabel">RSA KEY</h3>
+      </div>
+      <div class="modal-body">
+       	<h2 class="theme-text">Public Key:</h1>
+       	<h3 class="theme-black">&nbsp;&nbsp;&nbsp;encode</h2>
+       	<h2 class="theme-text">Private Key:</h1>
+       	<h3 class="theme-black">&nbsp;&nbsp;&nbsp;encode</h2>
+      </div>
+      <div class="modal-footer">
+        <button id="dia_cate_btnNo" type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+        <button id="dia_cate_btnOK" type="button" class="btn btn-primary">確定</button>
+      </div>
+    </div>
+  </div>
+</div>
+      <!--	Dialog Type -->
+<div class="modal fade" id="Dialog_Register" tabindex="-1" role="dialog" aria-labelledby="CategoryLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button id="dialog_btn_Close" type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title theme-black" id="CategoryLabel">PC &amp; Mobile</h4>
+      </div>
+      <div class="modal-body">
+       	<div class="input-group input-group">
+       		<span class="input-group-addon">Name&nbsp;&nbsp;</span>
+  			<input id="dialog_input" type="text" class="form-control" >
+		</div>
+         <div class="input-group input-group">
+       		<span class="input-group-addon">Identify</span>
+  			<input id="dialog_input" type="text" class="form-control" >
+		</div>
+      </div>
+      <div class="modal-footer">
+      <ul class="nav-ul">
+          <li class="nav-li-left">
+           <button type="button" class="btn btn-danger btn-sm "><span class="glyphicon glyphicon-trash" aria-hidden="true"></span></button></li>
+           <li class="nav-li-right">
+           <button type="button" class="btn btn-warning btn-sm" data-dismiss="modal"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></button>
+           <button type="button" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></button></li>
+       </ul>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+    
+    </div>
+</body>
+</html>
