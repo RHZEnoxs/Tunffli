@@ -80,12 +80,17 @@ Java Swing 實作功能介面，MQTT 傳輸協議參考 IBM Mqtt 範例 paho-mqt
 + paho-mqtt
     + <https://eclipse.org/paho/>
 
-<img src = 'assets/image/swing_webcam.png' width="30%">
-<img src = 'assets/image/swing_dashboard.png' width="30%">
-<img src = 'assets/image/swing_music.png' width="30%">
-
-<img src = 'assets/image/swing_link.png' width="30%">
-<img src = 'assets/image/swing_switch.png' width="30%">
+<table>
+    <tr>
+        <td width="30%"><img src = 'assets/image/swing_webcam.png' ></td>
+        <td width="30%"><img src = 'assets/image/swing_dashboard.png' ></td>
+        <td width="30%"><img src = 'assets/image/swing_music.png' ></td>
+   </tr>
+   <tr>
+       <td width="30%"><img src = 'assets/image/swing_link.png'></td>
+       <td width="30%"><img src = 'assets/image/swing_switch.png'></td>
+   </tr>
+</table>
 
 ### Android 應用程式
 Android 實作功能介面
@@ -95,12 +100,21 @@ Android 實作功能介面
 + Webcam 功能參照 ipcam-view
     + <https://github.com/niqdev/ipcam-view>
 
+<table>
+    <tr>
+        <td width="25%"><img src = 'assets/image/android_switch.png' ></td>
+        <td width="25%"><img src = 'assets/image/android_music.png' ></td>
+        <td width="25%"><img src = 'assets/image/android_webcam.png' ></td>
+   </tr>
+   <tr>
+       <td width="25%"><img src = 'assets/image/android_link.png'></td>
+       <td width="25%"><img src = 'assets/image/android_sidebar.png'></td>
+   </tr>
+</table>
 
-<img src = 'assets/image/android_switch.png' width="25%">
-<img src = 'assets/image/android_music.png' width="25%">
-<img src = 'assets/image/android_webcam.png' width="25%">
 
-<img src = 'assets/image/android_link.png' width="25%">
-<img src = 'assets/image/android_sidebar.png' width="25%">
+
+
+
 
 
